@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31499884786",
+    "firebase_url": "https://moniton-f3650.firebaseio.com",
+    "project_id": "moniton-f3650",
+    "storage_bucket": "moniton-f3650.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31499884786:android:8a25cf93585d6bfdf1d86b",
+        "android_client_info": {
+          "package_name": "com.yariv.ofek.taxicounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31499884786-41ak4g053ggj44r1iopce8jvln92mcps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yariv.ofek.taxicounter",
+            "certificate_hash": "78600ad77685c96ea319ebe908c80059a02e9e0e"
+          }
+        },
+        {
+          "client_id": "31499884786-n4r4vhmn5s5vkal50ih652qpsvgt7hse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFqw5XnL-23lHbdS2wRHA7AZPv4A_M_m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31499884786-n4r4vhmn5s5vkal50ih652qpsvgt7hse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

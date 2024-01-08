@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.yariv.ofek.taxicounter" />
+                  <option name="mobileSdkAppId" value="1:31499884786:android:8a25cf93585d6bfdf1d86b" />
+                  <option name="projectId" value="moniton-f3650" />
+                  <option name="projectNumber" value="31499884786" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

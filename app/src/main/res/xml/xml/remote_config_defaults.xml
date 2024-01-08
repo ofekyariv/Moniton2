@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>start_price</key>
+        <value>11.85</value>
+    </entry>
+    <entry>
+        <key>fare_a</key>
+        <value>1.86</value>
+    </entry>
+    <entry>
+        <key>fare_b</key>
+        <value>2.22</value>
+    </entry>
+    <entry>
+        <key>fare_c</key>
+        <value>2.60</value>
+    </entry>
+    <entry>
+        <key>price_multiplier</key>
+        <value>1.15</value>
+    </entry>
+    <entry>
+        <key>airport_addition</key>
+        <value>5.0</value>
+    </entry>
+    <entry>
+        <key>phone_order_addition</key>
+        <value>5.0</value>
+    </entry>
+    <entry>
+        <key>banner_ad_unit</key>
+        <value>ca-app-pub-7044814813380831/8694178703</value>
+    </entry>
+    <entry>
+        <key>interstitial_ad_unit</key>
+        <value>ca-app-pub-7044814813380831/6534935135</value>
+    </entry>
+</defaultsMap>
