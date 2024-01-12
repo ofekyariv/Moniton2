@@ -21,8 +21,6 @@
     <string name="recommended_taxi_stations">תחנות מוניות מומלצות</string>
     <string name="choose_extras">בחר תוספות מחיר</string>
     <string name="extras">תוספות מחיר</string>
-    <string name="ending_point">נקודת סיום</string>
-    <string name="starting_point">נקודת התחלה</string>
     <string name="start_counter">התחל נסיעה</string>
     <string name="stop_counter">עצור</string>
     <string name="reset_counter">אפס מונה</string>

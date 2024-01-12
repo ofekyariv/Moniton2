@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Moniton</string>
-    <string name="destination">End</string>
+    <string name="destination">Destination</string>
     <string name="calculate">Calculate</string>
     <string name="by_law_statement">By law - every ride is required to operate a taximeter</string>
     <string name="holidays">Saturday and holidays</string>
-    <string name="origin">Start</string>
+    <string name="origin">Origin</string>
     <string name="current_location">Current location</string>
     <string name="locale_iw">en</string>
     <string name="no_connection">No network connection!</string>
@@ -44,8 +44,6 @@
     <string name="msg_error_sending_email">Error sending email, check your connection</string>
     <string name="cant_find_location">we couldn\'t find your location please fill in your address</string>
     <string name="calculating">Calculating</string>
-    <string name="ending_point">Ending Point</string>
-    <string name="starting_point">Starting Point</string>
     <string name="where_to_order_from">From where?</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="taxi_driver_click_here">"Taxi Driver Registration"</string>

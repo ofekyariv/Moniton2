@@ -22,12 +22,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.yariv.ofek.taxicounter.presentation.fragments.CalculationFragment
+import com.yariv.ofek.taxicounter.calculation.CalculationFragment
 import com.yariv.ofek.taxicounter.presentation.fragments.OrderFragment
 import com.yariv.ofek.taxicounter.presentation.fragments.RealTimeCounterFragment
 import com.yariv.ofek.taxicounter.presentation.navigation.NavigationItem
-import com.yariv.ofek.taxicounter.ui.theme.Moniton2Theme
+import com.yariv.ofek.taxicounter.presentation.theme.Moniton2Theme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainContent() {
     val navController = rememberNavController()
-    val items = remember { NavigationItem.values() }
+    val items = remember { NavigationItem.entries.toTypedArray() }
     Scaffold(
         bottomBar = {
             NavigationBar {

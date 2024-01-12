@@ -1,4 +1,4 @@
-package com.yariv.ofek.taxicounter.ui.theme
+package com.yariv.ofek.taxicounter.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

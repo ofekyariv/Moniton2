@@ -1,4 +1,4 @@
-package com.yariv.ofek.taxicounter.ui.theme
+package com.yariv.ofek.taxicounter.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

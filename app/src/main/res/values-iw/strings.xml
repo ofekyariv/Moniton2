@@ -44,8 +44,6 @@
     <string name="msg_sending_email">שולח מייל</string>
     <string name="contact_us">צור קשר</string>
     <string name="calculating">מחשב מחיר נסיעה</string>
-    <string name="ending_point">נקודת סיום</string>
-    <string name="starting_point">נקודת התחלה</string>
     <string name="where_to_order_from">מאיפה להזמין?</string>
     <string name="privacy_policy">מדיניות פרטיות</string>
     <string name="taxi_driver_click_here">נהג מונית - לחץ כאן</string>
