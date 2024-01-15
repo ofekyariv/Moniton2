@@ -22,7 +22,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.yariv.ofek.taxicounter.calculation.CalculationFragment
+import com.yariv.ofek.taxicounter.presentation.calculation.compose.CalculationFragment
 import com.yariv.ofek.taxicounter.presentation.fragments.OrderFragment
 import com.yariv.ofek.taxicounter.presentation.fragments.RealTimeCounterFragment
 import com.yariv.ofek.taxicounter.presentation.navigation.NavigationItem

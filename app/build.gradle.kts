@@ -89,6 +89,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    testImplementation("org.mockito:mockito-core:4.7.0")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    testImplementation("com.squareup.retrofit2:retrofit:2.9.0")
+    testImplementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
 
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.50")
@@ -111,6 +118,7 @@ dependencies {
     // Mockito for unit testing
     testImplementation("org.mockito:mockito-core:4.7.0")
     androidTestImplementation("org.mockito:mockito-android:4.7.0")
+
 
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.6")

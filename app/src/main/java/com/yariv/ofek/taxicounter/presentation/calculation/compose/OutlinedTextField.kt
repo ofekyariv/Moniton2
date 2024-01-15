@@ -1,4 +1,4 @@
-package com.yariv.ofek.taxicounter.calculation.compose
+package com.yariv.ofek.taxicounter.presentation.calculation.compose
 
 import android.app.Activity
 import android.content.Intent
@@ -17,6 +17,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -43,8 +44,16 @@ fun CustomOutlinedTextField(
     suggestions: List<String>,
     onSuggestionSelected: (String) -> Unit,
     focusRequester: FocusRequester? = null,
+    hasLocationFeature: Boolean = false,
 ) {
     var isDropdownExpanded by remember { mutableStateOf(false) }
+
+    LaunchedEffect(suggestions) {
+        if (isDropdownExpanded && suggestions.isEmpty()) {
+            isDropdownExpanded = false
+        }
+    }
+
     Column {
         OutlinedTextField(
             singleLine = true,
@@ -52,7 +61,7 @@ fun CustomOutlinedTextField(
             value = state,
             onValueChange = {
                 onValueChange(it)
-                isDropdownExpanded = it.isNotEmpty()
+                isDropdownExpanded = it.isNotEmpty() && suggestions.isNotEmpty()
             },
             label = { Text(text = label) },
             modifier = Modifier
@@ -74,6 +83,31 @@ fun CustomOutlinedTextField(
                 } else {
                     SpeechToText(onResult = { result -> onValueChange(result) })
                 }
+            },
+            leadingIcon = {
+                if (hasLocationFeature) {
+                    IconButton(
+                        onClick = { /*TODO*/ },
+                        modifier = Modifier.testTag("locationIcon")
+                    ) {
+                        Icon(
+                            imageVector = ImageVector.vectorResource(id = R.drawable.ic_location),
+                            contentDescription = label,
+                            modifier = Modifier.size(24.dp)
+                        )
+                    }
+                } else {
+                    IconButton(
+                        onClick = { /*TODO*/ },
+                        modifier = Modifier.testTag("swapIcon")
+                    ) {
+                        Icon(
+                            imageVector = ImageVector.vectorResource(id = R.drawable.ic_swap),
+                            contentDescription = label,
+                            modifier = Modifier.size(24.dp)
+                        )
+                    }
+                }
             }
         )
 
@@ -91,7 +125,7 @@ fun CustomOutlinedTextField(
                         onSuggestionSelected(suggestion)
                         isDropdownExpanded = false
                     },
-                    text = { Text(text = suggestion) }
+                    text = { Text(text = suggestion, maxLines = 1) }
                 )
             }
         }

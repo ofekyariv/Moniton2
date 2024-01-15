@@ -9,7 +9,7 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
-import com.yariv.ofek.taxicounter.calculation.compose.CustomOutlinedTextField
+import com.yariv.ofek.taxicounter.presentation.calculation.compose.CustomOutlinedTextField
 import org.junit.Rule
 import org.junit.Test
 
@@ -25,7 +25,10 @@ class CustomOutlinedTextFieldTest {
             CustomOutlinedTextField(
                 state = text,
                 onValueChange = { text = it },
-                label = "Test Field"
+                label = "Test Field",
+                suggestions = emptyList(),
+                onSuggestionSelected = {},
+                focusRequester = null,
             )
         }
 
